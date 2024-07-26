@@ -10,6 +10,7 @@
             @focus="v.$reset()"
             :class="{'is-danger': !!validate({prop: 'name'})}"
             class="input"
+            autocomplete="off"
             type="text"
         >
         <p
@@ -31,6 +32,7 @@
             @focus="v.$reset()"
             :class="{'is-danger': !!validate({prop: 'email'})}"
             class="input"
+            autocomplete="off"
             type="text"
         >
         <p
@@ -54,6 +56,7 @@
             :data-maska="'+7 (###) - ### - ## - ##'"
             :class="{'is-danger': !!validate({prop: 'phone'})}"
             class="input"
+            autocomplete="off"
             type="text"
         >
         <p
@@ -75,6 +78,7 @@
             @focus="v.$reset()"
             :class="{'is-danger': !!validate({prop: 'textarea'})}"
             class="textarea"
+            autocomplete="off"
             type="text"
         />
         <p
@@ -95,6 +99,7 @@
               @focus="v.$reset()"
               :class="{'is-danger': !!validate({prop: 'password'})}"
               class="input"
+              autocomplete="off"
               type="password"
           />
           <p
@@ -116,6 +121,7 @@
               @focus="v.$reset()"
               :class="{'is-danger': !!validate({prop: 'currentPassword'})}"
               class="input"
+              autocomplete="off"
               type="password"
           />
           <p
@@ -135,6 +141,7 @@
             <input
                 v-model="form.checkbox"
                 @focus="v.$reset()"
+                autocomplete="off"
                 type="checkbox"
             />
             Я соглашаюсь с <a href="#">правилами сообщества</a>
